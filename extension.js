@@ -90,7 +90,7 @@
       afkRankCheck: "ambassador",
       motdEnabled: false,
       motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motd: "Be sure to download the "PlugCubed" addon for your browser to access this rooms special settings!",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
