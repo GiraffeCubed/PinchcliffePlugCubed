@@ -95,7 +95,7 @@
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: "http://www.pinchcliffesmp.com/forum/m/19021533/viewthread/16984829-server-rules",
+      rulesLink: null,
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
