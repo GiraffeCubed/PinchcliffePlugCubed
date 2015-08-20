@@ -1,7 +1,7 @@
 (function () {
 
     // Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "Yemasthui";
+    var fork = "GiraffeCubed";
 
     // Define our function responsible for extending the bot.
     function extend() {
@@ -26,14 +26,14 @@
 
         // Example code for a bot command:
         bot.commands.baconCommand = {
-            command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+            command: 'jam',  // The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', // Minimum user permission to use the command
             type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
               functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Bacon!!!");
+                  API.sendChat("https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg");
                 }
               }
             };
@@ -46,7 +46,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "PinchBot",
       language: "english",
       chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
       scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
@@ -59,7 +59,7 @@
       smartSkip: true,
       cmdDeletion: true,
       maximumAfk: 120,
-      afkRemoval: true,
+      afkRemoval: false,
       maximumDc: 60,
       bouncerPlus: true,
       blacklistEnabled: true,
@@ -70,13 +70,13 @@
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
-      historySkip: false,
+      historySkip: true,
       timeGuard: true,
       maximumSongLength: 10,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 1,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -99,7 +99,7 @@
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
-      website: null,
+      website: "http://www.PinchcliffeSMP.com",
       intervalMessages: [],
       messageInterval: 5,
       songstats: true,
