@@ -89,7 +89,7 @@
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
       motdEnabled: true,
-      motdInterval: 5,
+      motdInterval: 15,
       motd: "Be sure to download the \"PlugCubed\" addon for your browser to access this rooms special settings!",
       filterChat: true,
       etaRestriction: false,
