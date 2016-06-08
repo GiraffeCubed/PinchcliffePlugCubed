@@ -32,9 +32,9 @@
               functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
+                var msg = '/me [@' + from + '] ';
                 else {
-                  var link = "https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg";
-                  API.sendChat(subChat(basicBot.chat.jam, {link: link, name: chat.un}));
+                  API.sendChat("https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg");
                 }
               }
             };
@@ -49,8 +49,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "PinchBot",
       language: "english",
-      chatLink: "https://rawgit.com/GiraffeCubed/PinchBotPlugDJ/master/lang/en.json",
-      scriptLink: "https://rawgit.com/GiraffeCubed/PinchBotPlugDJ/master/PinchBot.js",
+      chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+      scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -113,6 +113,6 @@
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/GiraffeCubed/PinchBotPlugDJ/master/PinchBot.js", extend);
+    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
 
 }).call(this);
