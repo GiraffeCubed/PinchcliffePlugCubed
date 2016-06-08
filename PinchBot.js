@@ -2184,11 +2184,6 @@
                 }
             },
 
-        // Load the chat package again to account for any changes
-        bot.loadChat();
-
-      }
-
             fbCommand: {
                 command: 'fb',
                 rank: 'user',
