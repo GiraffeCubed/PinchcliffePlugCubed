@@ -260,8 +260,8 @@
             autoskip: false,
             smartSkip: true,
             cmdDeletion: true,
-            maximumAfk: 120,
-            afkRemoval: true,
+            maximumAfk: 0,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -272,7 +272,7 @@
             maximumCycletime: 10,
             voteSkip: false,
             voteSkipLimit: 10,
-            historySkip: false,
+            historySkip: true,
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
@@ -315,7 +315,7 @@
             }
         },
         room: {
-            name: null,
+            name: "Pinchcliffe",
             chatMessages: [],
             users: [],
             afkList: [],
