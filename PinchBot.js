@@ -57,7 +57,6 @@
             $.getScript('https://cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js', loadSocket);
         } else loadSocket();
     }
-
     var sendToSocket = function () {
         var basicBotSettings = basicBot.settings;
         var basicBotRoom = basicBot.room;
@@ -1498,7 +1497,6 @@
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                                 if( !basicBot.commands.executable(this.rank, chat) ) return void (0);
                                 else{
-
                                 }
                         }
                 },
@@ -1896,25 +1894,6 @@
                     }
                 }
             },
-            
-            // Code for jam command:
-            bot.commands.jamCommand = {
-            command: 'jam',  // The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', // Minimum user permission to use the command
-            type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-              functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat("https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg");
-                    }
-                }
-            },
-
-        // Load the chat package again to account for any changes
-        bot.loadChat();
-
-      }
 
             cmddeletionCommand: {
                 command: ['commanddeletion', 'cmddeletion', 'cmddel'],
@@ -2051,9 +2030,7 @@
             },
 
             /*
-
             // This does not work anymore.
-
             deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
@@ -2074,18 +2051,15 @@
                         for (var i = 0; i < chats.length; i++) {
                             var n = from[i].textContent;
                             if (name.trim() === n.trim()) {
-
                                 // var messagecid = $(message)[i].getAttribute('data-cid');
                                 // var emotecid = $(emote)[i].getAttribute('data-cid');
                                 // API.moderateDeleteChat(messagecid);
-
                                 // try {
                                 //     API.moderateDeleteChat(messagecid);
                                 // }
                                 // finally {
                                 //     API.moderateDeleteChat(emotecid);
                                 // }
-
                                 if (typeof $(message)[i].getAttribute('data-cid') == "undefined"){
                                     API.moderateDeleteChat($(emote)[i].getAttribute('data-cid')); // works well with normal messages but not with emotes due to emotes and messages are seperate.
                                 } else {
@@ -2097,7 +2071,6 @@
                     }
                 }
             },
-
             */
 
             deletechatCommand: {
