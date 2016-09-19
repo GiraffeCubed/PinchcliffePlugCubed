@@ -30,10 +30,7 @@
             rank: 'user', // Minimum user permission to use the command
             type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
               functionality: function (chat, cmd) {
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                  API.sendChat("https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg");
-                }
+                API.sendChat("https://c1.staticflickr.com/9/8353/8304886007_c49bceaa8f_z.jpg");
               }
             };
 
