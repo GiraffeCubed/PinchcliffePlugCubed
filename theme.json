@@ -143,7 +143,7 @@
     },
     "images":{  
         "background":"https:\\\\/\\\\/cdn.radiant.dj\\\\/rcs\\\\/bg\\\\/1.png",
-        "booth":"http:\\\/\\\/static.djbooth.net\\\/pics-equip\\\/cmd-micro.png",
+        "booth":"",
         "icons":{  
             "admin":"",
             "ambassador":"",
