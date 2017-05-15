@@ -142,8 +142,8 @@
         }
     },
     "images":{  
-        "background":"https:\\\\/\\\\/cdn.radiant.dj\\\\/rcs\\\\/bg\\\\/1.png",
-        "booth":"",
+        "background":"http:\\\/\\\/i.imgur.com\\\/zdiwdin.png",
+        "booth":"http:\\\/\\\/i.imgur.com\\\/tGYkylX.png",
         "icons":{  
             "admin":"",
             "ambassador":"",
